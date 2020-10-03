@@ -1,0 +1,17 @@
+<!-- <h1>{{ pageHeader }}</h1>
+<app-employee-list></app-employee-list>
+<br /><br />
+Your Text : <input type="text" [(ngModel)]="userText" /><br />
+<app-simple [simpleInput]="userText"></app-simple> -->
+<div style="padding:5px">
+  <ul class="nav nav-tabs">
+    <li routerLinkActive="active">
+      <a routerLink="home">Home</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="employees">Employees</a>
+    </li>
+  </ul>
+  <br />
+  <router-outlet></router-outlet>
+</div>
